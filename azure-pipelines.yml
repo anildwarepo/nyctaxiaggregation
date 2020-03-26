@@ -23,6 +23,6 @@ steps:
     goals: 'clean package'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '/home/vsts/work/1/s/target'
     ArtifactName: 'drop'
     publishLocation: 'Container'
